@@ -1,0 +1,67 @@
+﻿@model MonashHotel2.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CusEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CusEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CusPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CusPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CusPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CusPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Admin.AdminEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Admin.AdminEmail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

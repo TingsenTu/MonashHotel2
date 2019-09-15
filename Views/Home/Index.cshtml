@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    var titleColor = "Highlight";
+    var subtitleColor = "darkslategray";
+}
+
+
+
+<div class="jumbotron" style=" background-image: url('../../Image/beach.jpeg');">
+    <h1 style="color:@titleColor">Monash Hotel</h1>
+    <p class="lead" style="color:@subtitleColor">Welcome to Monash Hotel. Hope you enjoy your time here.</p>
+    <p><a href="/home/about" class="btn btn-primary btn-lg">Show about</a></p>
+</div>
+
+
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2 style="color:@titleColor">Book Room</h2>
+        <p style="color:@subtitleColor">
+            Click the button to book a room
+        </p>
+        <p><a class="btn btn-dark" href="checkins/create">Book Room</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2 style="color:@titleColor">View Map</h2>
+        <p style="color:@subtitleColor">View the nearby facilities.</p>
+        <p><a class="btn btn-dark" href="">Let's GO</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2 style="color:@titleColor">Sending Email</h2>
+        <p style="color:@subtitleColor">Via our website, you can send email easily.</p>
+        <p><a class="btn btn-dark" href="">Send email now</a></p>
+    </div>
+</div>
+
